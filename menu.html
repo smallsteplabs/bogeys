@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Bogey's Teras</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Bootstrap (Framework) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+    <!-- Full Screen Background Slides -->
+    <link rel="stylesheet" href="js/superslides/superslides.css">
+
+    <!-- Lightbox -->
+    <link href='js/simplelightbox/simplelightbox.css' rel='stylesheet' type='text/css'>
+    
+    <!-- Timepicker -->
+    <link rel="stylesheet" href="js/jquery-timepicker/jquery.timepicker.css">
+
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="js/bootstrap-datepicker/bootstrap-datepicker.css">
+
+    <!-- Masonry grid Layout -->
+    <link rel="stylesheet" href="js/jQuery-flexImages/jquery.flex-images.css">
+
+    <!-- Off Canvas Navigation -->
+    <link type="text/css" href="js/pushy/pushy.css" rel="stylesheet" />
+
+    <!-- Prasto Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="http://demo.jmkumaresh.com/prasto/preview/001/images/favicon.png">
+
+    <!--[if lt IE 9]>
+        <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Preloader
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Off canvas menu starts -->
+    <div class="off-canvas-menu">
+        <a class="menu-btn" id="hamburger"><span></span></a>
+        <nav class="pushy pushy-right main-menu">
+            <a class="close-btn menu-btn"><i class="icon icon-cross"></i></a>
+            <a class="brand" href="index.html#home"><h2>Bogey's</h2></a>
+            <ul class="list-unstyled menu-items" id="menu-items">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="social clearfix">
+                <a href="index.html"><i class="icon icon-facebook"></i></a>
+                <a href="index.html"><i class="icon icon-twitter"></i></a>
+                <a href="index.html"><i class="icon icon-google-plus"></i></a>
+                <a href="index.html"><i class="icon icon-instagram"></i></a>
+
+            </div>
+        </nav>
+    </div> <!-- Off canvas menu ends -->
+
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main body starts -->
+    <div id="container">
+        <!-- Our Menu section starts -->
+        <section id="our-menu">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <p class="text-center">
+                  <span class="label label-danger">7</span>
+                  items ordered
+                  &nbsp;
+                  <a href="order.html" class="btn btn-primary">Done</a>
+                </p>
+                <div class="menu-table">
+                    <!-- Menu tabs -->
+                    <ul class="nav nav-tabs  menu-tabs" role="tablist">
+                        <li class="active">
+                            <a href="index.html#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab" class="icon icon-home"><span>Appetizers</span></a>
+                        </li>
+                        <li>
+                            <a href="index.html#pizza" aria-controls="pizza" role="tab" data-toggle="tab">Pizza</a>
+                        </li>
+                        <li>
+                            <a href="index.html#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Desserts</a>
+                        </li>
+                    </ul>
+
+                    <!-- Menu Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active fade in" id="appetizers">
+                            <div class="row">
+                                <div class="menu-group">
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <a href="#menuItemDetails" data-toggle="modal">
+                                                <img src="images/item1.jpg" alt="" class="img-circle">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">
+                                                <a href="#menuItemDetails" data-toggle="modal">
+                                                    Crispy Risotto Balls
+                                                </a>
+                                            </span>
+                                            <span class="menu-item-price">
+                                                34
+                                            </span>
+                                            <span class="menu-descp">mozzarella, Grana Padano, herb aioli, marinara</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty label label-danger">
+                                                2
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/item2.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Minestrone Soup</span>
+                                            <span class="menu-item-price">
+                                                45
+                                            </span>
+                                            <span class="menu-descp">cranberry beans, vegetables, Grana Padano</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/item3.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Lentil Soup</span>
+                                            <span class="menu-item-price">
+                                                54
+                                            </span>
+                                            <span class="menu-descp">parmesan chicken broth, potato, Grana Padano, parsley</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty label label-danger">
+                                               1
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/item4.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Mixed Greens</span>
+                                            <span class="menu-item-price">
+                                                23
+                                            </span>
+                                            <span class="menu-descp">red wine vinaigrette, pears, walnuts, goat cheese</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/item5.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Chopped Salad</span>
+                                            <span class="menu-item-price">
+                                                46
+                                            </span>
+                                            <span class="menu-descp">chickpea, green olive, pistachio, pepperoni, oregano, red wine vinaigrette, pecorino</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/item1.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Orange Salad</span>
+                                            <span class="menu-item-price">
+                                                64
+                                            </span>
+                                            <span class="menu-descp">green olives, red onions, tarragon, extra virgin olive oil</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/item2.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Shaved Kale</span>
+                                            <span class="menu-item-price">
+                                                75
+                                            </span>
+                                            <span class="menu-descp">creamy anchovy dressing, pecorino, bread crumbs</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="pizza">
+                            <div class="row">
+                                <div class="menu-group">
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item1.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Margherita</span>
+                                            <span class="menu-item-price">
+                                                38
+                                            </span>
+                                            <span class="menu-descp">tomato, mozzarella, basil</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item2.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Pastaria Marinara</span>
+                                            <span class="menu-item-price">
+                                                48
+                                            </span>
+                                            <span class="menu-descp">tomato, onion, garlic, oregano, basil, pecorino (very minimal cheese)</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty label label-danger">
+                                               1
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item3.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Pappardelle</span>
+                                            <span class="menu-item-price">
+                                                73
+                                            </span>
+                                            <span class="menu-descp">smoked pork, mascarpone, apples</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item4.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Four Cheese</span>
+                                            <span class="menu-item-price">
+                                                48
+                                            </span>
+                                            <span class="menu-descp">mozzarella, fontina, gorgonzola dolce, Grana Padano (no tomato)</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty label label-danger">
+                                               1
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item5.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Fennel Salami</span>
+                                            <span class="menu-item-price">
+                                                43
+                                            </span>
+                                            <span class="menu-descp">tomato, mozzarella</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item1.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">The Holmes</span>
+                                            <span class="menu-item-price">
+                                                75
+                                            </span>
+                                            <span class="menu-descp">tomato, mozzarella, mushroom, prosciutto, oregano, Grana Padano</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item2.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Sweet Potato</span>
+                                            <span class="menu-item-price">
+                                                38
+                                            </span>
+                                            <span class="menu-descp">béchamel, fontina, red onion, lemon zest, herbs</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="desserts">
+                            <div class="row">
+                                <div class="menu-group">
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item1.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Mama Rodolico’s Tiramisu</span>
+                                            <span class="menu-item-price">
+                                                53
+                                            </span>
+                                            <span class="menu-descp">roasted cauliflower, potato, lemon,caper, parsley</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item2.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Dark Chocolate Tart</span>
+                                            <span class="menu-item-price">
+                                                37
+                                            </span>
+                                            <span class="menu-descp">whipped cream and candied hazelnuts</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty">
+                                               &nbsp;
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item3.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Yoghurt Panna Cotta</span>
+                                            <span class="menu-item-price">
+                                                73
+                                            </span>
+                                            <span class="menu-descp">cherry compote</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty label label-danger">
+                                               1
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                                            <img src="images/item3.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Cannoli</span>
+                                            <span class="menu-item-price">
+                                                48
+                                            </span>
+                                            <span class="menu-descp">pastry cream with strawberry balsamic and salted pistachios</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <div class="btn-group-vertical btn-group-sm" role="group" aria-label="...">
+                                              <button type="button" class="btn btn-primary">+</button>
+                                              <button type="button" class="btn btn-primary">-</button>
+                                            </div>
+                                            <span class="menu-qty label label-danger">
+                                               1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- Our Menu section ends -->
+
+        <!-- Footer starts -->
+        <footer>
+            <div class="container">
+                <p>© Copyright 2016 Bogey's Teras.<br /><small>A <a href="http://www.smallsteplabs.com">smallstep labs</a> craft.</small></p>
+            </div>
+        </footer> <!-- Footer ends -->
+    </div> <!-- Main body ends -->
+
+
+<div class="modal fade" id="menuItemDetails">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">Crispy Risotto Balls</h3>
+      </div>
+      <div class="modal-body">
+        <h2><span class="label label-warning pull-right">
+          <small>Rp</small> 34<small>.000</small></span></h2>
+        <p>
+          <img src="images/item1.jpg" alt="" class="img-rounded" style="width:50%;">
+        </p>
+        <br />
+        <h4>Ingredients</h4>
+        <p>
+          mozzarella, Grana Padano, herb aioli, marinara
+        </p>
+        <h4>How to cook</h4>
+        <p>
+          baked 120 minutes
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- Javascripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Jquery library -->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('#status').fadeOut(); // will first fade out the loading animation
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+        //]]>
+    </script> 
+
+    <!-- Bootstrap (Framework) -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <!-- Full Screen Background Slides -->
+    <script src="js/superslides/jquery.superslides.min.js"></script>
+
+     <!-- Lightbox -->
+    <script src="js/simplelightbox/simple-lightbox.min.js"></script>
+
+    <!-- Datepicker -->
+    <script src="js/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+    <!-- Timepicker -->
+    <script src="js/jquery-timepicker/jquery.timepicker.min.js"></script>
+
+    <!-- Masonry grid Layout -->
+    <script src="js/jQuery-flexImages/jquery.flex-images.min.js"></script>
+
+    <!-- Off Canvas Navigation -->
+    <script type="text/javascript" src="js/pushy/pushy.js"></script>
+
+    <!-- Smooth one page scroll -->
+    <script src="js/jquery-one-page-nav/jquery.nav.js"></script>
+
+    <!-- Google Map -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Prasto plugins -->
+    <script src="js/main.js"></script>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
