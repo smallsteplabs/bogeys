@@ -50,6 +50,12 @@
     <!--[if lt IE 9]>
         <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
     <![endif]-->
+
+    <style>
+    body {
+        font-size: 30pt;
+    }
+    </style>
 </head>
 
 <body>
@@ -71,7 +77,7 @@
             <div class="container">
                 <h2>A-01
                     <small>Rian Awi</small>
-                    <span class="badge pull-right">#1</span>
+                    <small class="pull-right">#1</small>
                 </h2>
                 <div class="menu-table">
                     <!-- Menu Tab panes -->
@@ -81,10 +87,6 @@
                                 <div class="menu-group">
                                     <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
                                         <table class="table">
-                                          <tr>
-                                            <th class="text-center">Qty</th>
-                                            <th>Menu</th>
-                                          </tr>
                                           <tr>
                                             <td class="text-center">2</td>
                                             <td>Crispy Risotto Balls<br><small class="menu-descp">no salt</small></td>
@@ -164,6 +166,7 @@
                 $('#status').fadeOut(); // will first fade out the loading animation
                 $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
                 $('body').delay(350).css({'overflow':'visible'});
+                window.print();
             })
         //]]>
     </script> 
