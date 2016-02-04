@@ -107,43 +107,31 @@
                                           <tr>
                                             <th class="text-center">Qty</th>
                                             <th>Menu</th>
-                                            <th class="text-right">Total</th>
-                                          <tr>
+                                          </tr>
                                           <tr>
                                             <td class="text-center">2</td>
                                             <td>Crispy Risotto Balls<br><small class="menu-descp">no salt</small></td>
-                                            <td class="text-right">68</td>
-                                          <tr>
+                                          </tr>
                                           <tr>
                                             <td class="text-center">1</td>
                                             <td>Lentil Soup</td>
-                                            <td class="text-right">108</td>
-                                          <tr>
+                                          </tr>
                                           <tr>
                                             <td class="text-center">1</td>
                                             <td>Pastaria Marinara</td>
-                                            <td class="text-right">48</td>
-                                          <tr>
+                                          </tr>
                                           <tr>
                                             <td class="text-center">1</td>
                                             <td>Four Cheese</td>
-                                            <td class="text-right">48</td>
-                                          <tr>
+                                          </tr>
                                           <tr>
                                             <td class="text-center">1</td>
                                             <td>Yoghurt Panna Cotta<br><small class="menu-descp">half glass</small></td>
-                                            <td class="text-right">73</td>
-                                          <tr>
+                                          </tr>
                                           <tr>
                                             <td class="text-center">1</td>
                                             <td>Cannoli</td>
-                                            <td class="text-right">48</td>
-                                          <tr>
-                                          <tr>
-                                            <td class="text-center">&nbsp;</td>
-                                            <td><strong>Total</strong></td>
-                                            <td class="text-right"><strong>393</strong></td>
-                                          <tr>
+                                          </tr>
                                         </table>
                                     </div>
 
@@ -152,8 +140,15 @@
   <div class="row">
     <div class="col-sm-6 col-xs-12">
       <div class="form-group">
-        <label for="exampleInputPassword1">Captcha (required)</label>
-        <input type="password" class="form-control input-lg" id="exampleInputPassword1" placeholder="Order Captcha" describedby="captchaHint">
+        <label for="exampleInputPassword1">Name (required)</label>
+        <input type="text" class="form-control input-lg" id="exampleInputPassword1" placeholder="Your Name" describedby="captchaHint">
+        <span id="nameHint" class="help-block">For billing.</span>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+      <div class="form-group">
+        <label for="exampleInputPassword1">Order Pin (required)</label>
+        <input type="text" class="form-control input-lg" id="exampleInputPassword1" placeholder="Order Pin" describedby="captchaHint">
         <span id="captchaHint" class="help-block">Ask your captain order for this.</span>
       </div>
     </div>
@@ -161,13 +156,12 @@
       <div class="form-group">
         <label for="exampleInputEmail1">Email (optional)</label>
         <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="Your email address" describedby="emailHint">
-        <span id="emailHint" class="help-block">To send your order receipt.</span>
+        <span id="emailHint" class="help-block">If you want to receive order copy.</span>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <button type="submit" class="btn btn-primary btn-lg pull-right">Place Order</button>
+    <div class="col-sm-6 col-xs-12">
+      <label for="exampleInputEmail1">&nbsp;</label>
+      <button type="submit" class="btn btn-primary btn-block btn-lg pull-right">Place Order</button>
     </div>
   </div>
 </form>
