@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Bogey's Teras</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Bootstrap (Framework) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+    <!-- Prasto Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]>
+        <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+    <![endif]-->
+
+    <style>
+    body {
+        font-size: 30pt;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Main body starts -->
+    <div id="container">
+        <!-- Our Menu section starts -->
+        <section id="print-out">
+            <div class="container">
+                <h2>A-01
+                    <small>Rian Awi</small>
+                    <small class="pull-right">#1</small>
+                </h2>
+                <div class="menu-table">
+                    <!-- Menu Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active fade in" id="appetizers">
+                            <div class="row">
+                                <div class="menu-group">
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <table class="table">
+                                          <tr>
+                                            <td class="text-center">2</td>
+                                            <td>Crispy Risotto Balls<br><small class="menu-descp">no salt</small></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center">1</td>
+                                            <td>Lentil Soup</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center">1</td>
+                                            <td>Pastaria Marinara</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center">1</td>
+                                            <td>Four Cheese</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center">1</td>
+                                            <td>Yoghurt Panna Cotta<br><small class="menu-descp">half glass</small></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-center">1</td>
+                                            <td>Cannoli</td>
+                                          </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- Our Menu section ends -->
+
+				<div id="print_button_container"></div>
+
+    </div> <!-- Main body ends -->
+
+
+<div class="modal fade" id="menuItemDetails">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">Crispy Risotto Balls</h3>
+      </div>
+      <div class="modal-body">
+        <h2><span class="label label-warning pull-right">
+          <small>Rp</small> 34<small>.000</small></span></h2>
+        <p>
+          <img src="images/item1.jpg" alt="" class="img-rounded" style="width:50%;">
+        </p>
+        <br />
+        <h4>Ingredients</h4>
+        <p>
+          mozzarella, Grana Padano, herb aioli, marinara
+        </p>
+        <h4>How to cook</h4>
+        <p>
+          baked 120 minutes
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- Javascripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Jquery library -->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('#status').fadeOut(); // will first fade out the loading animation
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+        //]]>
+    </script> 
+
+    <!-- Bootstrap (Framework) -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <!-- Prasto plugins -->
+    <script src="js/main.js"></script>
+
+<script src="https://www.google.com/cloudprint/client/cpgadget.js">
+</script>
+<script>
+  window.onload = function() {
+    var gadget = new cloudprint.Gadget();
+    gadget.setPrintButton(
+        cloudprint.Gadget.createDefaultPrintButton("print_button_container")); // div id to contain the button
+    gadget.setPrintDocument("[document mimetype]", "[document title]", "[document content]", "[encoding] (optional)");
+  }
+</script>
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
